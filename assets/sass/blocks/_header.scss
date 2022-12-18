@@ -1,0 +1,49 @@
+.header {
+  background: $blockBg;
+  padding: 22px 0;
+  .container {
+    @include flexbox;
+    align-items: center;
+    justify-content: space-between;
+    .logo {
+      font-size: 1.6rem;
+      text-transform: uppercase;
+      font-weight: bold;
+      font-family: "Jost", sans-serif;
+      // z-index: 5;
+      a {
+        color: $primaryColor;
+      }
+    }
+    .nav ul {
+      @include flexbox;
+      gap: 1rem;
+      li a {
+        font-size: 1rem;
+        color: $textColor;
+        text-transform: capitalize;
+        @include transition(color 0.5s);
+        &:hover {
+          color: $primaryColor;
+        }
+      }
+    }
+    .phone {
+      @include flexbox;
+      font-size: 1.2rem;
+      color: $textColor;
+      flex-direction: column;
+      text-align: right;
+      span {
+        font-size: 0.8rem;
+        color: #7d7d7d;
+        cursor: pointer;
+        text-decoration: underline;
+        @include transition(color 0.5s);
+        &:hover {
+          color: $primaryColor;
+        }
+      }
+    }
+  }
+}

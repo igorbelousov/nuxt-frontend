@@ -1,0 +1,27 @@
+.footer {
+  margin-top: 30px;
+  background: $blockBg;
+  padding:18px 0;
+  .container {
+
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.footer-info {
+    max-width: 30%;
+    line-height: 1.6rem;
+    h3{
+        font-family: "Jost", sans-serif;
+    }
+    a{
+        color: $textColor;
+        text-decoration: underline;
+        font-size: 1rem;
+        margin-right: 18px;
+        text-transform:capitalize;
+        &:hover{
+            color: $primaryColor;
+        }
+    }
+}

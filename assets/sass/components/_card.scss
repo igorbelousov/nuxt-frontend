@@ -1,0 +1,74 @@
+.card-item {
+  width: 302px;
+  height: 500px;
+  position: relative;
+  &:hover {
+    background: #fff;
+    box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    z-index: 2;
+  }
+  img {
+    width: 290px;
+    height: 290px;
+    margin: 6px;
+  }
+
+  h3 {
+    padding: 15px;
+    font-size: 1.2rem;
+    display: block;
+    height: 70px;
+    line-height: 1.6;
+    overflow: hidden;
+    color: #000;
+  }
+  .price {
+    font-size: 1.2rem;
+    padding: 15px;
+    font-family: "Jost";
+  }
+  .buy {
+    visibility: hidden;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .qty {
+      display: flex;
+      align-items: center;
+
+      input,
+      button {
+        font-size: 1.5rem;
+        background: none;
+        width: 40px;
+        height: 31px;
+      }
+      button {
+        box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.2);
+        border-radius: 20px;
+        margin-right: 15px;
+      }
+    }
+    .btn-buy {
+      font-size: 1.2rem;
+      height: 45px;
+      width: 49px;
+      background: $primaryColor;
+      border-radius: 50%;
+      font-weight: bold;
+      .icon-basket {
+        color: #fff;
+        &::before {
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+
+.card-item:hover .buy {
+  visibility: visible;
+}
