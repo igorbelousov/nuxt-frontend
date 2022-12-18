@@ -13,22 +13,4 @@
   </div>
   <AppFooter />
 
- 
-
 </template>
-
-<script setup>
-import AppHeader from '@/components/AppHeader.vue';
-import AppNav from '@/components/AppNav.vue';
-import AppFooter from '@/components/AppFooter.vue';
-
-  components:{
-    AppHeader,
-    AppNav,
-    AppFooter
-  }
-
-
-
-
-</script>

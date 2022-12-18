@@ -34,7 +34,3 @@ const menu = ()=>{
     show.value = !show.value
  }
 </script>
-
-<style>
-
-</style>

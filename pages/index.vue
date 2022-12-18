@@ -3,28 +3,26 @@
     <AppSlider />
     <section class="home-category">
         <h2>Popular category <span>all product in category &#10141;</span></h2>
-        <AppProduct v-for="index in [1,2,3,4]" :key="index" />
+        <AppProduct v-for="index in limit" :key="index" />
        
 
       </section>
 
       <section class="home-category">
         <h2>In Stock <span>all product in category &#10141;</span></h2>
-        <AppProduct v-for="index in [1,2,3,4]" :key="index" />
+        <AppProduct v-for="index in limit" :key="index" />
 
       </section>
 
       <section class="home-category">
         <h2>Popular <span>all product in category &#10141;</span></h2>
-        <AppProduct v-for="index in [1,2,3,4]" :key="index" />
+        <AppProduct v-for="index in limit" :key="index" />
 
       </section>
   </div>
 </template>
 
 <script setup>
-import AppSlider from '@/components/AppSlider.vue';
-import AppProduct from '@/components/AppProduct.vue';
 
 useHead({
   title: 'test',
@@ -33,10 +31,6 @@ useHead({
     {hid: 'keywords',  name: 'keywords', content: 'My amazing site.' }
   ],
 })
-  
-  components:{
-    AppSlider,
-    AppProduct
-  }
 
+const limit = 4
 </script>

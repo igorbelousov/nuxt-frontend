@@ -26,12 +26,6 @@
       </section>
 </template>
 
-<script>
-export default {
-
-}
-</script>
-
 <style>
 .swiper-slide{
   background:lightgrey
